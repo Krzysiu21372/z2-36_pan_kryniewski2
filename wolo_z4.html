@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h1>Sposoby podłączania CSS do kodu strony WWW</h1>
+    <p>
+        1)Zewnętrzny arkusz stylów.<br>
+        <table border="1" align=center width="80%">
+            <td>
+                < HEAD ><br>
+                < LINK rel="Stylesheet" type="text/css" href="style.html" ><br>
+                < / HEAD>
+            </td>
+        </table>
+        2)Styl lokalny inaczej: (styl wpisany, liniowy, linijkowy, w linii) czyli
+        dopisanie arkusza do wybranego bloku treści strony.<br>
+        <table border="1" align=center width="80%">
+            <td> < SELEKTOR style="cecha1: wartość1; cecha2: wartość2...">...< / SELEKTOR ></td>
+        </table>
+        3)Wewnętrzny arkusz stylów.<br>
+        <table border="1" align=center width="80%">
+            <td>
+                < HEAD ><br>
+                < STYLE  type="text/css"><br>
+                selektor1 { cecha: wartość; cecha2: wartość2... }<br>
+                selektor2 { cecha: wartość; cecha2: wartość2... } </ STYLE ><br>
+                < / HEAD >
+            </td>
+        </table>
+        4)Alternatywny arkusz stylów.<br>
+        <table border="1" align=center width="80%">
+            <td>
+                < HEAD ><br>
+                < LINK  rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" /><br>
+                < LINK  rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /><br>
+                < LINK rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" /><br>
+                < / HEAD >
+            </td>
+        </table>
+        5)Import arkusza stylów.<br>
+        <table border="1" align=center width="80%">
+            <td>
+                < STYLE  type="text/css"><br>
+                @import url(zewnetrzny.css)<br>
+                < / STYLE>
+            </td>
+        </table>
+    </p>
+</html>
